@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Thiệp mời dự lễ tốt nghiệp | Đinh Ngọc Hiếu</title>
+  <meta
+    name="description"
+    content="Trân trọng mời bạn đến dự lễ tốt nghiệp và cùng lưu lại khoảnh khắc đáng nhớ."
+  />
+  <meta
+    property="og:type"
+    content="website"
+  />
+  <meta
+    property="og:title"
+    content="Thiệp mời dự lễ tốt nghiệp của Chu Minh Hiếu"
+  />
+  <meta
+    property="og:description"
+    content="Trân trọng mời bạn đến dự lễ tốt nghiệp và cùng lưu lại khoảnh khắc đáng nhớ."
+  />
+  <meta
+    property="og:url"
+    content="https://chuminhhieu03.github.io/chuhieu03-graduation/"
+  />
+  <meta
+    property="og:image"
+    content="https://chuminhhieu03.github.io/chuhieu03-graduation/assets/og-chuhieu03-graduation.png"
+  />
+  <meta
+    property="og:image:width"
+    content="1200"
+  />
+  <meta
+    property="og:image:height"
+    content="630"
+  />
+  <meta
+    property="og:image:alt"
+    content="Thiệp mời dự lễ tốt nghiệp của Chu Minh Hiếu"
+  />
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+  <meta
+    name="twitter:title"
+    content="Thiệp mời dự lễ tốt nghiệp của Chu Minh Hiếu"
+  />
+  <meta
+    name="twitter:description"
+    content="Trân trọng mời bạn đến dự lễ tốt nghiệp và cùng lưu lại khoảnh khắc đáng nhớ."
+  />
+  <meta
+    name="twitter:image"
+    content="https://chuminhhieu03.github.io/chuhieu03-graduation/assets/og-chuhieu03-graduation.png"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href="./assets/og.chuhieu03-mainpicture.png"
+  />
+  <script
+    src="./script.js"
+    defer
+  ></script>
+</head>
+
+<body>
+  <div
+    class="envelope-overlay"
+    id="envelope-overlay"
+  >
+    <div class="envelope">
+      <div class="env-back"></div>
+      <div class="env-card"></div>
+      <div class="env-front-left"></div>
+      <div class="env-front-right"></div>
+      <div class="env-front-bottom"></div>
+      <div class="env-flap"></div>
+    </div>
+    <div class="envelope-toast">Nhấn vào phong bì để mở thiệp</div>
+  </div>
+
+  <div
+    class="confetti-layer"
+    id="confetti-layer"
+    aria-hidden="true"
+  ></div>
+
+  <audio
+    id="bgm"
+    src="./assets/bgm.mp3"
+    preload="auto"
+    loop
+  ></audio>
+
+  <button
+    class="music-toggle"
+    id="music-toggle"
+    type="button"
+    aria-pressed="false"
+  >
+    Bat nhac
+  </button>
+
+  <div class="page-shell">
+    <main class="poster-layout">
+      <section
+        class="poster"
+        aria-labelledby="invite-title"
+      >
+        <p
+          class="poster__eyebrow"
+          data-bind="posterEyebrow"
+        ></p>
+
+        <div class="poster__heading">
+          <p
+            class="poster__title-kicker"
+            data-bind="titleLine"
+          ></p>
+          <h1
+            class="poster__title-script"
+            id="invite-title"
+            data-bind="scriptTitle"
+          ></h1>
+          <p
+            class="poster__graduate-name"
+            data-bind="graduateNameUpper"
+          ></p>
+        </div>
+
+        <div class="poster__school-row">
+          <span
+            class="poster__school-line"
+            aria-hidden="true"
+          ></span>
+          <p
+            class="poster__school-name"
+            data-bind="schoolNameUpper"
+          ></p>
+          <span
+            class="poster__school-line"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <div class="poster__media-frame">
+          <p
+            class="poster__side-note poster__side-note--left"
+            data-bind="sideLabelLeft"
+          ></p>
+
+          <figure class="poster__photo-card">
+            <img
+              id="poster-photo"
+              class="poster__photo"
+              src="./assets/og.chuhieu03-mainpicture.png"
+              alt="Ảnh minh họa tốt nghiệp của Chu Minh Hiếu"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            />
+
+            <span class="poster__float-tag poster__float-tag--invite">VIP INVITE</span>
+            <span class="poster__float-tag poster__float-tag--date">23 MAY 2026</span>
+            <span class="poster__float-tag poster__float-tag--place">HỘI TRƯỜNG A2</span>
+
+            <span
+              class="poster__float-icon poster__float-icon--cap"
+              aria-hidden="true"
+            >🎓</span>
+            <span
+              class="poster__float-icon poster__float-icon--spark"
+              aria-hidden="true"
+            >✦</span>
+            <span
+              class="poster__float-icon poster__float-icon--pin"
+              aria-hidden="true"
+            >📍</span>
+
+            <!-- Star sparkle cluster – top right -->
+            <span
+              class="poster__spark poster__spark--tr-1"
+              aria-hidden="true"
+            >✦</span>
+            <span
+              class="poster__spark poster__spark--tr-2"
+              aria-hidden="true"
+            >✦</span>
+            <span
+              class="poster__spark poster__spark--tr-3"
+              aria-hidden="true"
+            >✦</span>
+
+            <!-- Star sparkle cluster – bottom left -->
+            <span
+              class="poster__spark poster__spark--bl-1"
+              aria-hidden="true"
+            >✦</span>
+            <span
+              class="poster__spark poster__spark--bl-2"
+              aria-hidden="true"
+            >✦</span>
+          </figure>
+
+          <p
+            class="poster__side-note poster__side-note--right"
+            data-bind="sideLabelRight"
+          ></p>
+        </div>
+
+        <div class="poster__details">
+          <article class="detail detail--time">
+            <p
+              class="detail__label"
+              <img
+              id="poster-photo"
+              class="poster__photo"
+              src="./assets/og.chuhieu03-mainpicture.png"
+              alt="Ảnh minh họa tốt nghiệp của Chu Minh Hiếu"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            >
+              </h2>
+            <p
+              class="detail__support"
+              data-bind="timeLabel"
+            ></p>
+            <a
+              class="detail__action"
+              id="calendar-link"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span data-bind="addCalendarLabel"></span>
+            </a>
+          </article>
+
+          <article class="detail detail--place">
+            <p
+              class="detail__label"
+              data-bind="detailPlaceLabel"
+            ></p>
+            <h2
+              class="detail__value"
+              data-bind="venueName"
+            ></h2>
+            <p
+              class="detail__support"
+              data-bind="schoolName"
+            ></p>
+            <a
+              class="detail__location"
+              id="maps-link"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span data-bind="mapLinkLabel"></span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="invitation-note"
+        data-reveal
+      >
+        <p
+          class="invitation-note__eyebrow"
+          data-bind="mainTitle"
+        ></p>
+        <p
+          class="invitation-note__lead"
+          data-bind="subTitle"
+        ></p>
+        <p
+          class="invitation-note__text"
+          data-bind="invitationText"
+        ></p>
+        <p class="invitation-note__signature">
+          <span data-bind="invitationSignaturePrefix"></span><br />
+          <strong data-bind="signature"></strong>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p data-bind="footerLine"></p>
+      <small data-bind="footerSubline"></small>
+    </footer>
+  </div>
+</body>
+
+</html>
