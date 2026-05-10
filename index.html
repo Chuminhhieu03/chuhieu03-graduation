@@ -30,12 +30,12 @@
   />
   <meta
     property="og:image"
-    content="https://chuminhhieu03.github.io/chuhieu03-graduation/assets/og-chuhieu03-graduation.png"
+    content="https://chuminhhieu03.github.io/chuhieu03-graduation/assets/og.chuhieu03-graduation.png"
   />
   <meta
     property="og:image:width"
     content="1200"
-  />
+  />s
   <meta
     property="og:image:height"
     content="630"
@@ -59,7 +59,7 @@
   />
   <meta
     name="twitter:image"
-    content="https://chuminhhieu03.github.io/chuhieu03-graduation/assets/og-chuhieu03-graduation.png"
+    content="https://chuminhhieu03.github.io/chuhieu03-graduation/assets/og.chuhieu03-graduation.png"
   />
 
   <link
@@ -240,16 +240,12 @@
           <article class="detail detail--time">
             <p
               class="detail__label"
-              <img
-              id="poster-photo"
-              class="poster__photo"
-              src="./assets/og.chuhieu03-mainpicture.png"
-              alt="Ảnh minh họa tốt nghiệp của Chu Minh Hiếu"
-              loading="eager"
-              decoding="async"
-              fetchpriority="high"
-            >
-              </h2>
+              data-bind="detailTimeLabel"
+            ></p>
+            <h2
+              class="detail__value"
+              data-bind="dateCompact"
+            ></h2>
             <p
               class="detail__support"
               data-bind="timeLabel"
